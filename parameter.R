@@ -1,0 +1,13 @@
+#params
+set.seed(1300)
+intro_point = rep(introduction$locations[3],100)#sample(introduction$locations, 10, replace = T) #sample(introduction$locations, 100, replace = TRUE))
+competition = rep(0.05, 100) #runif(n = 100, min = 0.049, max = 0.051) # nrow(prior_values)
+short_range_d = runif(n = 100, min = 910, max = 9100) |> round(0)
+long_range_d = runif(n = 100, min = 9100, max = 91000) |> round(0)
+introductions = runif(n = 100, min = 5, max = 100) |> round(0)#seq(50, 500, by = 50)#rep(5,4)#runif(n = 100, min = 20, max = 100) |> round(0)
+emigration = runif(n = 100, min = 0.05, max = 0.5)
+carrying_capacity = rep(10000, 100)#runif(n = 100, min = 5000, max = 10000) |> round(0)
+max_offspring = runif(n = 100, min = 50, max = 500) |> round(0)# seq(50, 500, by = 50)# rep(50,4)#runif(n = 100, min = 5, max = 50) |> round(0)
+short_range_probability = runif(n = 100, min = 0.7, max = 0.9)
+Year = 400 # runif(n = 1, min = 100, max = 500) |> round(0)
+replicates = 10 # runif(n = 1, min = 100, max = 500) |> round(0)
